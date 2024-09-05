@@ -2,9 +2,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 1400px;
 }
 
 div.squares {
     width: 86.5px;
     height: 50px;
+}
+
+.button {
+    display: block;
+    margin: auto;
 }
