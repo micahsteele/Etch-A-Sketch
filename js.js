@@ -14,7 +14,12 @@ const squares = document.querySelectorAll(".squares");
 console.log(squares);
 
 squares.forEach(div => div.addEventListener("mouseover", () => {
-        div.style.backgroundColor = "red";    
+    const randomBetween = (min, max) => min + Math.floor(Math.random() * (max - min + 1));
+    const r = randomBetween(0, 255);
+    const g = randomBetween(0, 255);
+    const b = randomBetween(0, 255);
+    const rgb = `rgb(${r},${g},${b})`;      
+    div.style.backgroundColor = rgb;    
 }))
 
 button.addEventListener("click", () => {
@@ -25,9 +30,7 @@ button.addEventListener("click", () => {
         return
     }
     let gridSize = question * question
-    // squares.forEach(div => {
-    //     div.style.backgroundColor = "transparent";    
-    // })
+// make question influnce css of divs
     for(x = 0; x < gridSize; x++) {
         const square = document.createElement("div");
         square.classList.add("squares");
@@ -39,9 +42,13 @@ button.addEventListener("click", () => {
     console.log(squares);
 
     squares.forEach(div => div.addEventListener("mouseover", () => {
-            div.style.backgroundColor = "red";    
+        const randomBetween = (min, max) => min + Math.floor(Math.random() * (max - min + 1));
+        const r = randomBetween(0, 255);
+        const g = randomBetween(0, 255);
+        const b = randomBetween(0, 255);
+        const rgb = `rgb(${r},${g},${b})`;      
+        div.style.backgroundColor = rgb; 
     }))
-
 })
 
 
