@@ -1,0 +1,9 @@
+#container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.squares {
+    width: 86.5px;
+    height: 86.5px;
+}
